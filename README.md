@@ -23,7 +23,8 @@ cybersecurity tools for NSA to help protect our nation and its allies, consider 
 
 ## Security Warning
 
-**WARNING:** There are known security vulnerabilities within certain versions of Ghidra.  Before 
+> [!WARNING]
+> There are known security vulnerabilities within certain versions of Ghidra.  Before 
 proceeding, please read through Ghidra's [Security Advisories][security] for a better understanding 
 of how you might be impacted.
 
@@ -58,8 +59,12 @@ To create the latest development build for your platform from this source reposi
 unzip ghidra-master
 cd ghidra-master
 ```
-**NOTE:** Instead of downloading the compressed source, you may instead want to clone the GitHub 
-repository: `git clone https://github.com/NationalSecurityAgency/ghidra.git`
+> [!NOTE]
+> Instead of downloading the compressed source, you may instead want to clone the GitHub 
+repository:
+> ```bash
+> git clone https://github.com/NationalSecurityAgency/ghidra.git
+> ```
 
 ##### Download additional build dependencies into source repository: 
 ```
@@ -83,7 +88,8 @@ Ghidra installations support users writing custom scripts and extensions via the
 for Eclipse.  The plugin and its corresponding instructions can be found within a Ghidra release at
 `Extensions/Eclipse/GhidraDev/` or at [this link][ghidradev].
 
-**NOTE:** The *GhidraDev* plugin for Eclipse only supports developing against fully built
+> [!NOTE]
+> The *GhidraDev* plugin for Eclipse only supports developing against fully built
 Ghidra installations which can be downloaded from the [Releases][releases] page.
 
 ### Advanced Development
