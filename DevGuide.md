@@ -74,13 +74,14 @@ on the platform on which it was built.
 gradle buildGhidra
 ```
 
-**Tip:**  You may want to skip certain Gradle tasks to speed up your build, or to deal with
-a problem later.  For example, perhaps you added some new source files and the build is failing 
-because of unresolved IP header issues.  You can use the Gradle `-x <task>` command line argument to
-prevent specific tasks from running:
-```
-gradle buildGhidra -x ip
-```
+> [!TIP]
+> You may want to skip certain Gradle tasks to speed up your build, or to deal with
+> a problem later.  For example, perhaps you added some new source files and the build is failing 
+> because of unresolved IP header issues.  You can use the Gradle `-x <task>` command line argument to
+> prevent specific tasks from running:
+> ```
+> gradle buildGhidra -x ip
+> ```
 
 ## Known Issues
 * There is a known issue in Gradle that can prevent it from discovering native toolchains on Linux 
@@ -97,10 +98,11 @@ downloaded dependencies as well:
 3. Move ghidra directory to different system
 4. `gradle -g dependencies/gradle buildGhidra` (on offline system)
 
-**NOTE**: The `-g` flag specifies the Gradle user home directory. The default is the `.gradle`
-directory in the user’s home directory.  Overriding it to be inside the Ghidra repository will
-ensure that all maven central dependencies that were fetched during the `prepdev` task will be moved
-along with the rest of the repo.
+> [!NOTE]
+> The `-g` flag specifies the Gradle user home directory. The default is the `.gradle`
+> directory in the user’s home directory.  Overriding it to be inside the Ghidra repository will
+> ensure that all maven central dependencies that were fetched during the `prepdev` task will be moved
+> along with the rest of the repo.
 
 ## Developing GhidraDev Eclipse Plugin
 Developing the GhidraDev Eclipse plugin requires the 
@@ -114,8 +116,9 @@ gradle eclipse -PeclipsePDE
 
 Import the newly generated GhidraDev projects into an Eclipse that supports this type of project. 
 
-__Note:__ If you are getting compilation errors related to PyDev and CDT, go into Eclipse's 
-preferences, and under _Target Platform_, activate _/Eclipse GhidraDevPlugin/GhidraDev.target_.
+> [!NOTE] 
+> If you are getting compilation errors related to PyDev and CDT, go into Eclipse's 
+> preferences, and under _Target Platform_, activate _/Eclipse GhidraDevPlugin/GhidraDev.target_.
 
 See [GhidraDevPlugin/build_README.txt](GhidraBuild/EclipsePlugins/GhidraDev/GhidraDevPlugin/build_README.txt)
 for instructions on how to build the GhidraDev plugin.
